@@ -390,6 +390,8 @@ template {
     .nav-item--focus {
       border: 1px solid rgba(255, 255, 255, 0.5);
       border-radius: 25px; }
+    .nav-item:first-letter {
+      color: #F7D800; }
 
 .container-brand {
   display: -webkit-box;
@@ -423,4 +425,40 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+
+.hero__slider-slide {
+  height: 630px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .hero__slider-slide--1 {
+    background-image: url(../img/1.jpg); }
+  .hero__slider-slide--2 {
+    background-image: url(../img/2.jpg); }
+  .hero__slider-slide--3 {
+    background-image: url(../img/3.jpg); }
+
+.hero-container {
+  padding-top: 130px; }
+
+.hero-title {
+  display: inline-block;
+  font-family: Roboto, sans-serif;
+  font-size: 55px;
+  font-weight: bold;
+  color: #F7D800;
+  text-transform: uppercase;
+  margin: 0px 0 5px 0;
+  padding: 3px 3px 0 3px;
+  background: url(../img/grid-bg.png);
+  background-repeat: repeat;
+  overflow: hidden; }
+
+.hero-description {
+  display: block;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  color: #ffffff;
+  margin: 12px 0 22px 0; }
 /*# sourceMappingURL=style.css.map */

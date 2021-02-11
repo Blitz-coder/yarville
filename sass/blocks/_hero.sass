@@ -1,0 +1,41 @@
+.hero
+    // height: 100vh
+    &__slider
+        // background-position: center center
+        // background-repeat: no-repeat
+        // background-size: cover
+
+        &-slide
+            height: 630px
+            background-position: center center
+            background-repeat: no-repeat
+            background-size: cover
+            &--1
+                background-image: url(../img/1.jpg)
+            &--2
+                background-image: url(../img/2.jpg)
+            &--3
+                background-image: url(../img/3.jpg)
+    &-container
+        padding-top: 130px
+
+    &-title
+        display: inline-block
+        font-family: Roboto, sans-serif
+        font-size: 55px
+        font-weight: bold
+        color: $primary
+        text-transform: uppercase
+        margin: 0px 0 5px 0
+        padding: 3px 3px 0 3px
+        // max-width: 350px
+        background: url(../img/grid-bg.png)
+        background-repeat: repeat
+        overflow: hidden
+    &-description
+        display: block
+        font-family: Roboto, sans-serif
+        font-weight: 500
+        font-size: 28px
+        color: $light
+        margin: 12px 0 22px 0
