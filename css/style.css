@@ -326,18 +326,6 @@ template {
 [hidden] {
   display: none; }
 
-.title {
-  color: #F5FAFE; }
-  .title-regular {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400; }
-  .title-medium {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500; }
-  .title-bold {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700; }
-
 .header__brand {
   background-color: #040300;
   padding: 12px 0; }
