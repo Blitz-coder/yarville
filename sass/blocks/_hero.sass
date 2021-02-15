@@ -7,10 +7,20 @@
         // background-size: cover
 
         &-slide
-            height: 630px
+            height: 670px
             background-position: center center
             background-repeat: no-repeat
             background-size: cover
+            &::before
+                content: ""
+                position: absolute
+                top: 0
+                left: 0
+                right: 0
+                bottom: 0
+                height: 100%
+                width: 100%
+                background: rgba(0, 0, 0, 0.7)
             &--1
                 background-image: url(../img/1.jpg)
             &--2
@@ -18,8 +28,9 @@
             &--3
                 background-image: url(../img/3.jpg)
     &-container
-        padding-top: 130px
-
+        padding-top: 90px
+        position: relative
+        z-index: 1000
     &-title
         display: inline-block
         font-family: Roboto, sans-serif
@@ -44,7 +55,7 @@
         background: $light
         position: absolute
         max-width: 325px
-        top: 20%
+        top: 12%
         left: 65%
         padding: 40px
         border: none
@@ -52,7 +63,7 @@
         display: flex
         flex-direction: column
         &__title
-            font-size: 24px
+            font-size: 20px
             font-weight: bold
             text-transform: uppercase
         &__description
@@ -83,3 +94,58 @@
             color: $light
             text-transform: uppercase
             font-weight: bold
+        &__icon
+            max-height: 140px
+            max-width: 140px
+            position: absolute
+            top: -35px
+            right: -35px
+.subhero
+    &-container
+        padding: 30px 0
+        border-top: 3px solid #191919
+        position: absolute
+        bottom: 45px
+        left: 50%
+        transform: translateX(-50%)
+        width: 100%
+    &-title
+        text-transform: uppercase
+        color: $primary
+        font-size: 12px
+        font-weight: medium
+        margin-bottom: 15px
+        padding-left: 10px
+    &-wrapper
+        display: flex
+        justify-content: space-between
+    &-block
+        max-width: 50%
+
+        &__wrapper
+            display: flex
+            justify-content: start
+            flex-wrap: wrap
+    &-block:not(:first-child)
+        max-width: 25%
+        padding-left: 30px
+        border-left: 1px solid #646464
+    &-menu
+        list-style: none
+        padding: 0px
+        display: flex
+        justify-content: start
+        flex-wrap: wrap
+
+        &__item
+            text-transform: uppercase
+            color: $light
+            font-size: 16px
+            margin-bottom: 15px
+            padding: 0 10px
+
+        &__item:not(:last-child)
+            border-right: 1px solid $primary
+        &-link
+            text-decoration: none
+            color: $light
